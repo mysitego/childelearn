@@ -110,16 +110,14 @@
             }
         }
 
-        /* Center modal on small screens */
-        @media (max-width: 768px) {
-            .modal-content {
-                width: 90%;
-                max-width: none;
-                margin-top: calc(50% - 100px); /* Center vertically */
+        /* Responsive styles */
+        @media (min-width: 769px) {
+            .alphabet-container {
+                grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
             }
 
-            .alphabet-container {
-                grid-template-columns: repeat(2, 1fr); /* Two columns for small screens */
+            .alphabet-container img {
+                max-width: 200px; /* Larger images for larger screens */
             }
         }
     </style>
